@@ -1,13 +1,158 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+input{
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Navbar component style */
+.navbar{
+  width: 100%;
+  padding: 20px 10px;
+  background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+.navbar h2{
+  background-color: white;
+  width: fit-content;
+  padding: 2px;
+}
+.brand-first-half{
+  margin-right: 2px;
+}
+.brand-last-half{
+  background-color: yellow;
+  color: black;
+
+}
+.navbar button{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.navbar button:hover{
+  background-color: yellow;
+  color: black;
+}
+
+/* AlbumsList component style */
+.albums-list{
+  width: 70%;
+  margin: auto;
+  padding-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* List component style */
+.list{
+  width: 310px;
+  height: 200px;
+  background: linear-gradient(135deg, #EAD02B, #FFFF15);
+  margin-bottom:5px ;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list h3{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.button-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.update-btn{
+  background-color: whitesmoke;
+  color: black;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.update-btn:hover{
+  background-color: black;
+  color: whitesmoke;
+}
+.delete-btn{
+  cursor: pointer;
+  border: 0px;
+  padding: 10px 20px;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 5px;
+}
+.delete-btn:hover{
+  color:white;
+  background-color:black;
+}
+
+/* UpdateAlbum component style */
+.update-album{
+  width: 350px;
+  margin: auto;
+  padding-top: 73px;
+  color: black;
+}
+.form-container{
+  background: linear-gradient(135deg, #EAD02B, #FFFF15);;
+  padding: 10px;
+  margin-top: 50px;
+}
+.inp-container{
+  margin: 10px;
+}
+.form-container button{
+  background-color: palevioletred;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* addAlbum container style */
+.addalbum-container{
+  color: white;
+  padding-top: 73px;
+  width: 350px;
+  margin: auto;
+}
+.addalbum-form{
+  padding: 10px;
+  background-color: #478AC9;
+  margin-top: 50px;
+}
+.addalbum-form button{
+  background-color: green;
+  padding: 10px 20px;
+  color: white;
 }
